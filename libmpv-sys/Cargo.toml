@@ -17,8 +17,8 @@
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 
 [package]
-name = "libmpv-sys"
-version = "3.1.0"
+name = "libmpv-sys-sirno"
+version = "2.0.0-fork.1"
 edition = "2018"
 authors = ["ParadoxSpiral <ParadoxSpiral@riseup.net>"]
 license = "LGPL-2.1"
@@ -28,11 +28,11 @@ repository = "https://github.com/ParadoxSpiral/libmpv-rs"
 keywords = ["media", "playback", "mpv", "libmpv"]
 
 [build-dependencies.bindgen]
-version = "0.54"
+version = "0.62"
 optional = true
 
-# Workaround for https://github.com/rust-lang/rust-bindgen/issues/1313
 [lib]
+name = "libmpv_sys"
 doctest = false
 
 [features]

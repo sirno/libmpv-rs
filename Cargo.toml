@@ -19,8 +19,8 @@
 members = ["libmpv-sys"]
 
 [package]
-name = "libmpv"
-version = "2.0.1"
+name = "libmpv-sirno"
+version = "2.0.2-fork.1"
 edition = "2018"
 authors = ["ParadoxSpiral <paradoxspiral@riseup.net>"]
 license = "LGPL-2.1"
@@ -30,9 +30,11 @@ description = "Libmpv abstraction that's easy to use and can play next to all co
 repository = "https://github.com/ParadoxSpiral/libmpv-rs"
 keywords = ["media", "playback", "mpv", "libmpv"]
 
+[lib]
+name = "libmpv"
 
 [dependencies]
-libmpv-sys = { path = "libmpv-sys", version = "3.1.0" }
+libmpv-sys-sirno = { path = "libmpv-sys", version = "2.0.0-fork.1" }
 
 [dev-dependencies]
 crossbeam = "0.7"
